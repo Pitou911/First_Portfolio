@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- JS Bootstrap Link  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="css/style.css
+    "
+    />
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+      integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+      crossorigin="anonymous"
+    />
+    <!-- Font family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Ubuntu:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="image/icon.png" type="image/icon type" />
+    <title>Pitou's portfolio</title>
+  </head>
+  <body>
+    <section id="title">
+      <nav class="nav-text navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><span class="brand-name">SongPitou</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="link__hover-effect" href="#title">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="link__hover-effect" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="link__hover-effect" href="#project">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="link__hover-effect" href="#ama">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="row bg-dark welcome-title">
+        <div class="col-lg-6">
+          <h1 class="h1-animation1">Hi! I'm Pitou</h1> 
+          <h1 class="h1-animation2">the Front-end</h1> 
+          <h1 class="h1-animation3">Web developer</h1>
+          <button type="button" class="btn-animation btn btn-lg btn-outline-light mb-4 mt-4">
+            Download CV
+          </button>
+        </div>
+        <div class="col-lg-6">
+          <img class="title-image" src="image/designerSVG.svg"/>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="row bg-image">
+        <div class="col-lg-7">
+          <div class="about-me">
+            <h1>About Me</h1>
+            <p>
+              I've joint the tech community for 2 years. My specialize is Web
+              development ( Front-end ). I'm currently a sophomore Computer
+              Science student at Paragon International University.
+            </p>
+            <br />
+            <p>
+              I love to be outdoors and spend most of my summers exploring
+              nature. I love to have fun and am constantly laughing. I love
+              anything to do with design. I am filled with passion and
+              enthusiasm which flows through everything I do.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <img class="undraw-png" src="image/undraw.png" />
+        </div>
+      </div>
+    </section>
+    <section id="project" class="bg-dark">
+      <h1 class="project-title text-light">Project</h1>
+      <div id="carousel-project" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active project-item">
+            <div class="project__image--wrapper">
+              <img class="project-image" src="image/p1.png" />
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Splitting Calculator
+                </h3>
+                <h4 class="project__description--subtitle">HTML, CSS, JS</h4>
+                <p class="project__description--para">
+                  Having trouble splitting the bills while going out with
+                  friends? No worries, This splitting calculator will help you
+                  calculate the amount of tip as well as the total paid per one
+                  person without using any formula.
+                </p>
+                <div class="project__description--link">
+                  <a
+                    class="description-link"
+                    href="https://splitting-tip-calculator.netlify.app/"
+                    target="_blank"
+                    ><i class="fas fa-link fa-2x"></i
+                  ></a>
+                  <a
+                    class="description-link"
+                    href="https://github.com/Pitou911/Tip-Splitter.git"
+                    target="_blank"
+                    ><i class="fab fa-github fa-2x"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item project-item">
+            <div class="project__image--wrapper">
+              <img class="project-image" src="image/p2.png" />
+              <div class="project__description">
+                <h3 class="project__description--title">The Vending Machine</h3>
+                <h4 class="project__description--subtitle">
+                  HTML, CSS, JS, jQuery
+                </h4>
+                <p class="project__description--para">
+                  The web-page was created in order to show the user the power
+                  of vending machine which contain a lot of drink to purchase by
+                  just one click. The drinks include Coca, Sprite, Monster...
+                </p>
+                <div class="project__description--link">
+                  <a
+                    class="description-link"
+                    href="https://the-vending-machine.netlify.app/"
+                    target="_blank"
+                    ><i class="fas fa-link fa-2x"></i
+                  ></a>
+                  <a
+                    class="description-link"
+                    href="https://github.com/Pitou911/Vending-machine.git"
+                    target="_blank"
+                    ><i class="fab fa-github fa-2x"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item project-item">
+            <div class="project__image--wrapper">
+              <img class="project-image" src="image/p3.png" />
+              <div class="project__description">
+                <h3 class="project__description--title">The Box</h3>
+                <h4 class="project__description--subtitle">HTML, CSS</h4>
+                <p class="project__description--para">
+                  Do you need time of from your day to day life? Well than take
+                  your summertime or during the winter there is a lot to be
+                  done. In Summer go hiking or swim in the nearby lake in Winter
+                  go skiing in the Snowshoe Mountain resort
+                </p>
+                <div class="project__description--link">
+                  <a
+                    class="description-link"
+                    href="https://github.com/Pitou911/The-box-clone-website.git"
+                    target="_blank"
+                    ><i class="fab fa-github fa-2x"></i
+                  ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carousel-project"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carousel-project"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <section id="follow-me">
+      <div class="follow-title">
+        <h1>Follow me</h1>
+        <hr />
+        <p>Join me in social media and stay tuned!</p>
+        <div class="social">
+          <a href="https://web.facebook.com/pitou.song.5/" target="_blank"
+            ><i class="social-icon fa-2x fab fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/pitou.song/" target="_blank"
+            ><i class="social-icon fa-2x fab fa-instagram"></i
+          ></a>
+          <a href="https://github.com/Pitou911" target="_blank"
+            ><i class="social-icon fa-2x fab fa-github"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <section id="ama" class="row bg-dark">
+      <div class="askmeAnything col-lg-6">
+        <h1>Ask Me Anything!</h1>
+        <hr/>
+        <p>
+          Feel free to ask my any question about web development, blog or if you
+          have any business inquires. Fill out the form below or send me an
+          email to
+          <a
+            href="mailto:songpitou723@gmail.com"
+            data-action="email"
+            class="ui-link"
+            >songpitou723@gmail.com</a
+          >
+        </p>
+        <form action="mailto:songpitou723@gmail.com">
+        <input
+          type="text"
+          class="form-control text-input"
+          placeholder="Name*"
+        />
+        <input
+          type="email"
+          class="form-control text-input"
+          placeholder="Email*"
+        />
+        <input
+          type="text"
+          class="form-control text-input"
+          placeholder="Your message"
+        />
+        <input class="btn submit-btn" type="submit" value="Submit" />
+      </form>
+        <p class="message-sent"></p>
+        <script src="script/script.js"></script>
+      </div>
+    </section>
+    <section id="footer">
+      <div class="container-fluid">
+        <footer
+          class="
+            d-flex
+            flex-wrap
+            justify-content-between
+            align-items-center
+            py-3
+            my-4
+            border-top
+          "
+        >
+          <p class="col-md-4 mb-0 text-muted">
+            &copy; 2021 Song Pitou,<br /><span> All right reserved</span>
+          </p>
+          <a
+            href="/"
+            class="
+              col-md-4
+              d-flex
+              align-items-center
+              justify-content-center
+              mb-3 mb-md-0
+              me-md-auto
+              link-dark
+              text-decoration-none
+            "
+          >
+          </a>
+
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item">
+              <a href="#title" class="nav-link px-2 text-muted">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link px-2 text-muted">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#project" class="nav-link px-2 text-muted">Project</a>
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,351 @@
+:root {
+  --ff-sacramento: "Sacramento", cursive;
+  --ff-ubuntu: "Ubuntu", sans-serif;
+  --ff-bebas-nueu: "Bebas Neue", cursive;
+}
+body {
+  font-family: var(--ff-ubuntu);
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+p {
+  padding: 0;
+}
+a {
+  text-decoration: none !important;
+  position: relative !important;
+  color: #fefbf3;
+}
+a:hover {
+  color: #fefbf3;
+}
+
+.link__hover-effect::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 0;
+  background-color: white;
+  bottom: -3px;
+  right: 0;
+  transition: all 500ms ease;
+}
+.link__hover-effect:hover::after {
+  width: 100% !important;
+  left: 0;
+}
+/* title section  */
+#title {
+  color: #ffffff;
+}
+.navbar {
+  padding: 1% 10% !important;
+}
+.welcome-title {
+  margin: 0;
+  padding: 7% 10% !important;
+}
+.welcome-title h1 {
+  font-size: 4.5rem;
+}
+.welcome-title p {
+  font-size: 1.2rem;
+}
+
+.h1-animation1 {
+  animation-name: leftToRight;
+  animation-duration: 1200ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+.h1-animation2 {
+  animation-name: leftToRight;
+  animation-duration: 1600ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+.h1-animation3 {
+  animation-name: leftToRight;
+  animation-duration: 2000ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+
+.p-animation,
+.btn-animation {
+  animation-name: leftToRight;
+  animation-duration: 2500ms;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+}
+
+@keyframes leftToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-500px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.title-image {
+  width: 70%;
+  /* text-align: center; */
+}
+.nav-text {
+  width: 100% !important;
+  font-size: 1.1rem;
+}
+.navbar-brand {
+  font-family: var(--ff-sacramento) !important;
+  font-size: 2.5rem !important;
+}
+.nav-item {
+  padding: 0 1rem;
+}
+
+/* about section  */
+#about {
+  padding: 7% 10% !important;
+  color: rgb(0, 0, 0);
+  /* background-image: url(../image/cover.jpg);
+  background-size: cover; */
+}
+.undraw-png {
+  margin: 10% 0 5%;
+  padding: 15% 0 0;
+  width: 100%;
+}
+.about-me {
+  padding: 5% 15% 0 0;
+  /* background-color: rgba(234, 234, 234, 0.233); */
+  border: 1px solid rgba(234, 234, 234, 0.1);
+  border-radius: 2px;
+}
+.about-me h1 {
+  font-size: 3.5rem;
+  font-family: var(--ff-sacramento);
+}
+.about-me p {
+  font-size: 1.2rem;
+  font-family: var(--ff-ubuntu);
+}
+
+/* Project section  */
+#project {
+  padding: 3% 0;
+  text-align: center;
+  color: #fff;
+}
+#project h1 {
+  font-family: var(--ff-bebas-nueu);
+  font-size: 2.2rem;
+}
+#project p {
+  font-family: sans-serif;
+}
+.project-title {
+  padding-top: 3%;
+  font-family: var(--ff-bebas-nueu);
+  font-size: 4rem !important;
+}
+
+.project__image--wrapper {
+  min-width: 350px;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  /* box-shadow: 0 1px 1px rgb(255, 255, 255, 0.1); */
+}
+.project__image--wrapper::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 500ms;
+  z-index: 2;
+}
+.project-item:hover .project__image--wrapper::before {
+  opacity: 0.4;
+}
+.project-image {
+  outline: none;
+  width: 100%;
+  transition: all 500ms;
+}
+.project-item:hover .project-image {
+  transform: scale(1.07);
+  filter: blur(5px);
+}
+
+.project-item {
+  line-height: 1.5;
+  padding: 1% 20%;
+  cursor: pointer;
+}
+
+.project-item:hover .project__description {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+.project__description {
+  position: absolute;
+  top: 50%;
+  left: 60px;
+  max-width: 500px;
+  line-height: 1.5;
+  transform: translateY(100%);
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 400ms, transform 500ms;
+}
+.project__description--title {
+  font-size: 2.5rem;
+}
+.project__description--subtitle {
+  font-size: 1.2rem;
+}
+.project__description--para {
+  margin: 1rem 0;
+}
+.project__description--title,
+.project__description--subtitle,
+.project__description--para,
+.project__description--link {
+  font-family: var(--ff-bebas-nueu);
+  text-align: left;
+  color: white;
+}
+
+.description-link + .description-link {
+  margin-left: 20px;
+}
+.description-link:hover {
+  color: gray;
+}
+
+/* Follow Me section  */
+#follow-me {
+  text-align: center;
+}
+#follow-me h1 {
+  font-size: 3rem;
+  font-family: var(--ff-bebas-nueu);
+}
+#follow-me p {
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+.follow-title {
+  padding: 3% 0;
+}
+
+#follow-me hr {
+  margin: 0 auto 2%;
+  width: 10%;
+  border-top: 10px inset rgb(0, 0, 0);
+}
+
+.social-icon {
+  color: black;
+  margin: 0 10px;
+}
+.social-icon:hover {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Me section  */
+#ama {
+  padding: 7% 10% !important;
+  margin: 0;
+
+  text-align: center;
+}
+#ama h1 {
+  color: #fefbf3;
+  font-size: 3rem;
+  font-family: var(--ff-bebas-nueu);
+}
+#ama p {
+  color: #fefbf3;
+  font-size: 1.2rem;
+  font-family: sans-serif;
+}
+.askmeAnything {
+  padding: 3% 5%;
+  margin: 3% auto;
+}
+#ama hr {
+  margin: 0 auto;
+  width: 300px;
+  border-top: 10px solid rgb(255, 255, 255);
+}
+.ui-link {
+  color: #fefbf3;
+  text-decoration: none;
+}
+.ui-link:hover {
+  color: rgb(255, 255, 255);
+}
+input {
+  border-radius: 2px !important;
+  padding: 3% !important;
+  margin: 3% 0;
+  width: 100%;
+}
+.text-input {
+  background-color: #fefbf3;
+}
+.submit-btn {
+  margin-top: 5% !important;
+  background-color: #fefbf3 !important;
+  transition: all 200ms;
+}
+.submit-btn:hover {
+  background-color: rgb(58, 58, 58) !important;
+  color: white;
+}
+.message-sent {
+  padding-top: 1%;
+  height: 40px;
+  font-family: var(--ff-bebas-nueu) !important;
+}
+
+/* footer section  */
+#footer {
+  padding: 1% 10% 0 !important;
+}
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 10px;
+  }
+  .title-image {
+    padding-top: 5rem;
+  }
+  .about-me {
+    padding-left: 1%;
+  }
+  .undraw-png {
+    padding: 0;
+  }
+  .project-item {
+    padding: 1% 10%;
+  }
+  .project-image {
+    height: auto;
+  }
+  .project__description {
+    left: 20px;
+    max-width: 250px;
+  }
+}
